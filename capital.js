@@ -240,16 +240,16 @@ return `
 
 Data.innerHTML =`${filteredContent.join("")}`
 
-let noItemFound = Data.every(function(itemss){
-    if(itemss.style.display == "none"){
-        return true;
-    } else return false;
+// let noItemFound = Data.every(function(itemss){
+//     if(itemss.style.display == "none"){
+//         return true;
+//     } else return false;
 
-    if(noItemFound){
-        errowTest.style.display = "block";
-        errowTest.textContent = `no ${search} found`;
-    } else{errowTest.style.display = "none"}
-})
+//     if(noItemFound){
+//         errowTest.style.display = "block";
+//         errowTest.textContent = `no ${search} found`;
+//     } else{errowTest.style.display = "none"}
+// })
 // console.log(filteredArray);
 });
 

@@ -34,6 +34,7 @@ bars.addEventListener("click", function(){
         blogHam.classList.remove("fa-times");
         blogHam.classList.add("fa-bars");
         ex.style.height = "0";
+        ex.style.padding = "0";
     }
     
 })

@@ -5,9 +5,72 @@ let mySearch = document.querySelector(".search")
 let display = document.querySelector(".search-input")
 let cancel = document.querySelector(".cancel")
 let search = document.querySelector("#search")
-
+let page = document.querySelector(".page")
 let errowTest = document.querySelector(".err");
 let store = document.querySelector(".container3")
+let bars = document.querySelector(".hamburger i")
+let hamburger = document.querySelector(".menu-content")
+let extension = document.querySelector(".extension1")
+let ham = document.querySelector(".page i")
+let blog = document.querySelector(".page1")
+let blogHam = document.querySelector(".page1 i")
+let ex = document.querySelector(".extension-3")
+
+
+bars.addEventListener("click", function(){
+    if(bars.classList.contains("fa-bars")){
+        extension.style.padding = "0";
+       hamburger.style.height = "480px"
+        bars.classList.add("fa-times");
+        bars.classList.remove("fa-bars");
+    }else{
+        hamburger.style.height = "0";
+        bars.classList.add("fa-bars");
+        bars.classList.remove("fa-times");
+        extension.style.height = "0";
+        ham.classList.remove("fa-times");
+        ham.classList.add("fa-bars");
+        extension.style.padding = "0";
+        blogHam.classList.remove("fa-times");
+        blogHam.classList.add("fa-bars");
+        ex.style.height = "0";
+    }
+    
+})
+
+page.addEventListener("click", function(){
+   if(ham.classList.contains("fa-bars")){
+    extension.style.height = "120px";
+    extension.style.padding = "9px 0";
+    ham.classList.add("fa-times");
+    ham.classList.remove("fa-bars");
+
+
+} else {
+        extension.style.height = "0";
+        ham.classList.add("fa-bars");
+        ham.classList.remove("fa-times");
+        extension.style.padding = "0";
+    }
+
+   
+
+})
+
+blog.addEventListener("click", function(){
+ if(blogHam.classList.contains("fa-bars")){
+    ex.style.height = "120px";
+    blogHam.classList.add("fa-times");
+    blogHam.classList.remove("fa-bars")
+    ex.style.padding = "9px 0";
+ } else{
+    ex.style.height = "0";
+    blogHam.classList.add("fa-bars");
+    blogHam.classList.remove("fa-times")
+    ex.style.padding = "0";
+ }
+})
+
 
 
 

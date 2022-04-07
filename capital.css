@@ -2,7 +2,7 @@
 .fi {width:20px; height:20px; border-radius: 50%; background-color: red; color:white;position: fixed;  bottom:50px; right:10px; z-index: 200; cursor: pointer; transition: 2s;}
 .h-container1, .h-container2  {width:50%; display: flex; justify-content: center;}
 .h-container1 a, .h-container2 a {color:black;}
-.header-container {display: flex; justify-content:center ; border-bottom:1px solid gray;}
+.header-container {display: flex; justify-content:center ; border-bottom:1px solid gray; display: none;}
 .header-container1 {display: flex; padding:10px;  width:90%;}
 /* .h-container2 {display: flex;} */
 .wishlist-container, .order-container, .icons-container {width:25%; text-align: center;}
@@ -84,7 +84,7 @@
 .container1-content-3 {background-image: url("./img/pinkoutfit.png");background-size: cover; background-repeat: no-repeat;
                         display: flex; align-items: flex-end;}
 .container1-wrapper {padding:30px;}
-.sticky-container {position: sticky; top:0; z-index: 100; background-color: white;}
+.sticky-container {position: sticky; top:0; z-index: 100; background-color: white; display: none;}
 
                             /* container 2 */
 
@@ -224,3 +224,81 @@ input {height:100%; padding:5px 10px; width:300px;}
 /* @keyframes men {
     0%{transform: translateY(50px);}
 } */
+
+@media  screen and (min-width:320px) {
+    /* .header-container {display: none;} */
+    /* .sticky-container {display: none;} */
+    .containers-wrappers {width:100%; overflow: hidden;}
+    .phone-header-image {padding:10px;}
+    .menu-wrapper {background-color: #4c4c4c; color:white;}
+    .menu, .hamburger {font-weight:bold; }
+    .hamburger {font-size:20px; cursor: pointer;}
+    .menu-wrapper {width:100%; display: flex; justify-content: flex-end; padding:10px 5px;}
+    .menu-container {width:80px; display: flex; justify-content: space-between; align-items: center; padding:4px; background-color: #212121; border-radius: 3px;}
+    .menu-content {background-color:#4c4c4c; color: white; height:0; overflow: hidden; transition: .5s; }
+    .menu-unordered-list1 {padding:5px; min-height: 200px;}
+    .menu-unordered-list1 li a {color:white; font-size: 14px;}
+    .menu-unordered-list1 li  {padding:5px 5px;}
+    .menu-unordered-list1 {padding:5px; }
+    .extension1, .extension-3 { height:0; overflow:hidden; transition: .5s;}
+.ex-link1, .ex-blog1 {padding:5px 30px;}
+.page, .page1 {font-size:13px;}
+.page i, .page1 i  {cursor: pointer;}
+    
+.m-slider-containers-wrapper {height: 350px; width:100% }
+.sli-icon1, .sli-icon2 {padding: 5px; font-size:16px; border-radius: 3px; }
+.slider-container1 {background-image: url("./img/ladyblue.png");background-repeat: no-repeat; background-size: cover; 
+                     background-position:center; height: 350px;}
+
+.slider-container {
+    background-image: url("./img/blueshirt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+  }
+ 
+  .slider1-content {
+    margin-left: 0;
+    text-align: center;
+    display: block;
+    align-items: center;
+    height: 100%;
+    font-family: cursive;
+  }
+  .flex-con h1, .flex-con1 h1 {font-size: 26px;}
+  .fashion, .fashion1 {
+    font-size: 20px; font-weight: bold;
+  }
+  .slider-container{width:100%;}
+  .flex-con, .flex-con1 {height: 100%; width: 100%;}
+  .flex-con p , .para-content1{font-size: 16px; padding:20px; line-height: 22px;}
+  .flex-con1 .fashion1{font-size:23px; padding: 20px;}
+  .shop-now, .shop-now1 {
+      width:120px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+  }
+
+  .shop-now-wrapper, .shop-now-wrapper1 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .slider1-content1 {
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* .para-content, .para-content1 {
+    font-size: 16px;
+  } */
+
+
+
+}

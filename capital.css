@@ -298,6 +298,40 @@ input {height:100%; padding:5px 10px; width:300px;}
   /* .para-content, .para-content1 {
     font-size: 16px;
   } */
+  .container1 {display:block;}
+  .fashion2 {width:100%; margin:40px 0; }
+  .container2-container1 {display: block;}
+  .container2-content1, .container2-content2 {width: 100%;}
+  .container2-content1 h1{font-size: 30px; text-align: center;}
+ 
+  .container2-content2 a {
+    padding: 20px 10px;
+    color: black;
+    height: 100%;
+    margin: 0 3px;
+  }
+  .container1-wrapper {
+    padding: 20px;
+  }
+
+  .container3 {
+    display: block;
+    text-align: center;
+    width: 90%;
+    padding: 20px 0;
+  }
+  
+  .container3-wrapper {
+    display: flex;
+  }
+  .container3-1 {
+    position: relative;
+    padding: 20px 0;
+  }
+ 
+ 
+
+
 
 
 
